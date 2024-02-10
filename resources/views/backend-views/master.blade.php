@@ -38,7 +38,7 @@
                     @include('backend-views.Partiels.sidebar')
                         <!--begin::Main-->
                         <div class="app-main flex-column flex-row-fluid " id="kt_app_main">
-                            @include('backend-views.Partiels.dashboard')
+                            @yield('content')
                             @include('backend-views.Partiels.footer')
                         </div>
                         <!--end:::Main-->

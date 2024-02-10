@@ -7,7 +7,7 @@
 <div class="app-header-logo d-flex flex-center">
 <!--begin::Logo image-->
 <a href="index.html">
-    <img alt="Logo" src="{{asset('backend-assets')}}/media/logos/logo.svg" class="mh-25px">
+    <img alt="Logo" src="{{asset('backend-assets')}}/media/logos/logo.png" class="mh-60px">
 </a>
 <!--end::Logo image-->
 
@@ -34,7 +34,7 @@
                     
         <!--begin::Item-->
                 <li class="breadcrumb-item text-muted">
-                                Dashboard                                            </li>
+                               @yield('sub-title')                                           </li>
             <!--end::Item-->
                     
 </ul>

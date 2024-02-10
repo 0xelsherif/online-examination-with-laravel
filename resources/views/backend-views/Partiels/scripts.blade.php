@@ -1,5 +1,5 @@
 <!--begin::Javascript-->
-    <script>var hostUrl = "{{asset('backend-assets')}}/";</script>
+    <script>var hostUrl = "/{{asset('backend-assets')}}/";</script>
     <!--begin::Global Javascript Bundle(mandatory for all pages)-->
     <script src="{{asset('backend-assets')}}/plugins/global/plugins.bundle.js"></script>
     <script src="{{asset('backend-assets')}}/js/scripts.bundle.js"></script>
@@ -23,9 +23,9 @@
     <!--begin::Custom Javascript(used for this page only)-->
     <script src="{{asset('backend-assets')}}/js/widgets.bundle.js"></script>
     <script src="{{asset('backend-assets')}}/js/custom/widgets.js"></script>
-    <script src="{{asset('backend-assets')}}/js/custom/custom-widgets/widget-1.js"></script>
-    <script src="{{asset('backend-assets')}}/js/custom/custom-widgets/widget-2.js"></script>
-    <script src="{{asset('backend-assets')}}/js/custom/apps/chat/chat.js"></script>
+    <script src="{{asset('backend-assets')}}/js/custom/utilities/modals/upgrade-plan.js"></script>
     <script src="{{asset('backend-assets')}}/js/custom/utilities/modals/users-search.js"></script>
+    <script src="{{asset('backend-assets')}}/js/custom/date-time.js"></script>
+
     <!--end::Custom Javascript-->
 <!--end::Javascript-->
