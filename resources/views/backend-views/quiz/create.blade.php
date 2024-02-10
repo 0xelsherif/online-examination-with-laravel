@@ -86,7 +86,7 @@
                                         
                                                                 <!--begin::Input group-->
                                                                 <div class="mb-5">
-                                                                    <input type="text" name="name" class="form-control form-control-solid" placeholder="Quiz Name" value="{{ old('name') }}">
+                                                                    <input type="text" name="name" class="form-control @error('name') is-invalid @endif" placeholder="Quiz Name" value="{{ old('name') }}">
                                                                     @error('name')
                                                                     <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"><div data-field="target_title" data-validator="notEmpty">{{  $message }}</div></div>
                                                                     @enderror
@@ -95,7 +95,7 @@
                                         
                                                                 <!--begin::Input group-->
                                                                 <div class="mb-5">
-                                                                    <textarea name="description" class="form-control form-control-solid" rows="3" placeholder="Quiz Description">{{ old('description') }}</textarea>
+                                                                    <textarea name="description" class="form-control @error('description') is-invalid @endif" rows="3" placeholder="Quiz Description">{{ old('description') }}</textarea>
                                                                     @error('description')
                                                                     <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"><div data-field="target_title" data-validator="notEmpty">{{  $message }}</div></div>
                                                                     @enderror
@@ -103,7 +103,7 @@
                                                                 <!--end::Input group-->
                                                                 <!--begin::Input group-->
                                                                 <div class="mb-5">
-                                                                    <input type="text" name="minutes" class="form-control form-control-solid" placeholder="Quiz Time in Minutes" value="{{ old('minutes') }}" id="c_inputmask_4">
+                                                                    <input type="text" name="minutes" class="form-control @error('minutes') is-invalid @endif" placeholder="Quiz Time in Minutes" value="{{ old('minutes') }}" id="c_inputmask_4">
                                                                     @error('minutes')
                                                                     <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"><div data-field="target_title" data-validator="notEmpty">{{  $message }}</div></div>
                                                                     @enderror
